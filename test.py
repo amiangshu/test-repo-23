@@ -49,7 +49,7 @@ def remove_url(s):
 def cleanhtml(raw_html):
     cleanr = re.compile('<.*?>')
     cleantext = re.sub(cleanr, '', raw_html)
-    cleantext = html.unescape(cleantext)
+    cleantext = html.unescape(cleantext) #I am removing HTML markups
     return cleantext
 
 
