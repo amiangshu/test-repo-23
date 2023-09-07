@@ -9,7 +9,7 @@ def sent_to_words(sentences):
     for sentence in sentences:
         yield (gensim.utils.simple_preprocess(str(sentence), deacc=True))
 
-
+#Let's create a conflict
 def replace_bigram(texts):
     bigram = gensim.models.Phrases(texts, min_count=20, threshold=10) #find bigrams that appear at least 10 times.
     mod = [bigram[sent] for sent in texts]
