@@ -2,7 +2,7 @@ def compute_average_diagonal(matrix, dimension):
     sum =0.0
     for i in range(0, dimension):
         sum += matrix[i][i]
-    average =sum/dimension
+    average =sum/dimension #comput average
     return  average
 
 def sent_to_words(sentences):
