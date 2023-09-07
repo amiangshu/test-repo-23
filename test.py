@@ -13,7 +13,7 @@ def sent_to_words(sentences):
 def replace_bigram(texts):
     bigram = gensim.models.Phrases(texts, min_count=20, threshold=10) #find bigrams that appear at least 10 times.
     mod = [bigram[sent] for sent in texts]
-    return mod
+    return mod #return modified phrases
 
 
 def stem_tokens(tokens):
