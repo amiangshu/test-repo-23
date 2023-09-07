@@ -25,7 +25,7 @@ def stem_tokens(tokens):
 
 def remove_stopwords(tokens):
     stopped_tokens = [i for i in tokens if not i in stemmed_stopwords]
-    return stopped_tokens
+    return stopped_tokens #return token list
 
 
 def remove_domainterms(tokens):
